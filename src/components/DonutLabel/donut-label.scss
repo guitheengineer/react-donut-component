@@ -1,0 +1,29 @@
+.Donut {
+  &__label {
+    font-size: 12px;
+    position: relative;
+    margin: 0;
+  }
+  &__text-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__value-container {
+    display: flex;
+    position: relative;
+    align-items: baseline;
+    left: 6px;
+  }
+  &__value {
+    font-size: 40px;
+  }
+  &__symbol {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,16 @@
+.Donut {
+  display: flex;
+  position: relative;
+  &__svg {
+    border-radius: 50%;
+    display: block;
+  }
+  &__track {
+    fill: transparent;
+  }
+  &__indicator {
+    fill: transparent;
+    stroke-dasharray: 0 10000;
+    transition: all 2s ease;
+  }
+}

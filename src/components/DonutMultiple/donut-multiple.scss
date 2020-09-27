@@ -1,0 +1,32 @@
+.Donut-multiple {
+  position: relative;
+  margin: 0;
+  &__label {
+    margin: 0;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__subtitles {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__block-color {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    margin-top: 4px;
+  }
+  &__subtitle {
+    margin: 8px 0px;
+    display: flex;
+    align-content: center;
+  }
+  &__subtitle-name {
+    margin-left: 6px;
+  }
+}

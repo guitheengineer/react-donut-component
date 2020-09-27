@@ -15,20 +15,29 @@ export default {
 
 export const Multiple: Story<DonutProps> = (args) => (
   <DonutMultiple {...args}>
-    <DonutElement color='red'>10</DonutElement>
-    <DonutElement color='blue'>90</DonutElement>
+    <DonutElement color='#3AB8D4'>10</DonutElement>
+    <DonutElement color='#6543A2'>90</DonutElement>
     <DonutLabel>Posts</DonutLabel>
   </DonutMultiple>
 );
 
 export const MultipleLabelWithNames: Story<DonutProps> = (args) => (
   <DonutMultiple {...args}>
-    <DonutElement name='Red one' color='red'>
+    <DonutElement name='Another one' color='#56ADA7'>
       10
     </DonutElement>
-    <DonutElement name='Blue one' color='blue'>
-      90
+    <DonutElement name='Another one' color='#DC442D'>
+      20
     </DonutElement>
-    <DonutLabel>Posts</DonutLabel>
+    <DonutElement name='Another one' color='#EA9564'>
+      30
+    </DonutElement>
+    <DonutElement name='Another one' color='#4C7D85'>
+      20
+    </DonutElement>
+    <DonutElement name='Another one' color='#30434D'>
+      20
+    </DonutElement>
+    <DonutLabel>Label</DonutLabel>
   </DonutMultiple>
 );

@@ -1,5 +1,5 @@
-<img src="https://github.com/gsdeveloper/react-donut-component/blob/master/assets/logo.png" alt="donut logo" title="donut logo" width="200" height='200'>
-<p style="margin-top: -20px;">A simple, easy to use and styleable component.</p>
+<img src="https://github.com/gsdeveloper/react-donut-component/blob/master/assets/logo.png" alt="donut logo" title="donut logo" width="181" height='77'>
+<p style="margin-top: -20px;">A simple, styleable and easy to use component.</p>
 <hr />
 
 ![downloads][downloads-badge]

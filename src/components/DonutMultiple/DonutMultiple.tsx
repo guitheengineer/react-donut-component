@@ -11,6 +11,7 @@ const DonutMultiple = ({
   strokeWidth = 5,
   animate = false,
   linecap = 'butt',
+  className,
 }: DonutProps) => {
   const cx = 50;
   const cy = 50;
@@ -34,7 +35,12 @@ const DonutMultiple = ({
       className='Donut-multiple'
       data-testid='donut-multiple'
     >
-      <svg strokeLinecap={linecap} width={size} viewBox='0 0 100 100'>
+      <svg
+        className={className}
+        strokeLinecap={linecap}
+        width={size}
+        viewBox='0 0 100 100'
+      >
         {Children.map(children, (child) => {
           if (child.type.name === donutElement) {
             const value = Number(child.props.children);

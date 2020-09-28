@@ -1,9 +1,7 @@
 import React from 'react';
-import { DonutMultiple, DonutElement } from './';
 import { Story } from '@storybook/react/types-6-0';
 import { DonutProps } from '../../types';
-import DonutLabel from '../DonutLabel/DonutLabel';
-import DonutValue from '../Donut/DonutValue';
+import { DonutMultiple, DonutElement, DonutLabel } from '../../index';
 
 export default {
   title: 'Donut Multiple',

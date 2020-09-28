@@ -2,8 +2,7 @@ import React from 'react';
 import Donut from './Donut';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { DonutProps } from '../../types';
-import DonutLabel from '../DonutLabel/DonutLabel';
-import DonutValue from './DonutValue';
+import { DonutLabel, DonutValue } from '../../index';
 
 export default {
   title: 'Donut',

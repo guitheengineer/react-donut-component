@@ -1,6 +1,6 @@
 {
   "name": "react-donut-component",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A simple and styleable donut component",
   "main": "build/index.js",
   "module": "build/index.es.js",

@@ -1,4 +1,4 @@
-<img src="https://github.com/gsdeveloper/react-donut-component/blob/master/assets/logo.png" alt="donut logo" title="donut logo" width="181" height='77'>
+<img src="https://i.ibb.co/KFd4kSp/logo.png" alt="donut logo" title="donut logo" width="181" height='77'>
 <p style="margin-top: -20px;">A simple, styleable and easy to use component.</p>
 <hr />
 
@@ -25,7 +25,7 @@ const App = () => (
 
 ```
 ## Result: 
-![donut-example](https://github.com/gsdeveloper/react-donut-component/blob/master/assets/donut-example.png)
+![donut-example](https://i.ibb.co/kmSRWSY/donut-example.png)
 
 For examples with styling, labels and multiple values, see: 
 [the story book](https://5f711adb6ec1620022e842dc-ewgfhkdqda.chromatic.com/?path=/story/donut--simple-donut)

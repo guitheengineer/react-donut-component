@@ -5,18 +5,6 @@
 ![downloads][downloads-badge]
 [![MIT License][license-badge]][license]
 
-
-
-## Table of Contents
-
-- [Get started](#get-started)
-- [Usage](#usage)
-- [Components Props](#donut-components)
-  - [Donut components](#donut-components)
-  - [DonutMultiple components](#donutmultiple-components)
-  - [DonutLabel](#donutlabel)
-- [LICENSE](#license)
-
 ## Install
 
 ```

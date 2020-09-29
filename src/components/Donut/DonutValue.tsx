@@ -8,7 +8,6 @@ type Props = DonutProps &
     children: children;
     symbol: string;
     styleContainer: CSSProperties;
-    stylePercentage: CSSProperties;
     styleSymbol: CSSProperties;
     presentValue: (value: number) => any;
   }>;

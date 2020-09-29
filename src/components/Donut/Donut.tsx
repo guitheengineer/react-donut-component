@@ -13,9 +13,11 @@ const Donut = ({
   trackColor = '#dfdff1',
   trackStrokeWidth = 15,
   styleTrack,
+  styleIndicator,
   animate = false,
   linecap = 'butt',
   indicatorStrokeWidth = 15,
+  indicatorColor = 'black',
 }: DonutProps) => {
   const [value, setValue] = useState(0);
   const halfSize = size * 0.5;
@@ -66,14 +68,26 @@ const Donut = ({
           cx={halfSize}
           cy={halfSize}
           transform={rotateVal}
-          style={{
-            strokeWidth: indicatorStrokeWidth
-              ? indicatorStrokeWidth
-              : strokeWidth,
-            strokeDasharray,
-            stroke: color,
-            transition: animate ? 'all 2s ease' : 'initial',
-          }}
+          style={
+            styleIndicator
+              ? {
+                  strokeWidth: indicatorStrokeWidth
+                    ? indicatorStrokeWidth
+                    : strokeWidth,
+                  strokeDasharray,
+                  stroke: indicatorColor ? indicatorColor : color,
+                  transition: animate ? 'all 2s ease' : 'initial',
+                  ...styleIndicator,
+                }
+              : {
+                  strokeWidth: indicatorStrokeWidth
+                    ? indicatorStrokeWidth
+                    : strokeWidth,
+                  strokeDasharray,
+                  stroke: indicatorColor ? indicatorColor : color,
+                  transition: animate ? 'all 2s ease' : 'initial',
+                }
+          }
           className='Donut__indicator'
           strokeLinecap={linecap}
         />

@@ -9,7 +9,9 @@ export type DonutProps = Partial<{
   style: CSSProperties;
   trackColor: string;
   styleTrack: CSSProperties;
+  styleIndicator: CSSProperties;
   linecap: 'butt' | 'round' | 'square';
   trackStrokeWidth: number;
   indicatorStrokeWidth: number;
+  indicatorColor: string;
 }>;

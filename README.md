@@ -31,7 +31,7 @@ const App = () => (
 ## Result: 
 ![donut-example](https://i.ibb.co/n60Dgxx/image.png)
 
-The API and examples with styles, labels and multiple values are available in: 
+See the API and examples with styles, labels and multiple values in: 
 [the story book](https://5f711adb6ec1620022e842dc-ewgfhkdqda.chromatic.com/?path=/story/donut--simple-donut)
 
 That's all :wink:

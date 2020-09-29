@@ -7,8 +7,8 @@ const donutLabel = 'DonutLabel';
 
 const DonutMultiple = ({
   children,
-  size = 220,
-  strokeWidth = 5,
+  size = 275,
+  strokeWidth = 7,
   animate = false,
   linecap = 'butt',
   className,

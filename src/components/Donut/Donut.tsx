@@ -5,7 +5,7 @@ import { DonutProps } from '../../types';
 
 const Donut = ({
   size = 180,
-  strokeWidth = 10,
+  strokeWidth = 15,
   className,
   children,
   color = 'black',

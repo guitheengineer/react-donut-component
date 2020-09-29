@@ -1,15 +1,16 @@
 import React, { CSSProperties, useEffect } from 'react';
+import './donut-value.scss';
 import { DonutProps } from '../../types';
 
 type children = string | number;
 
-type Props = DonutProps &
+type Props = Pick<DonutProps, 'style' | 'className'> &
   Partial<{
     children: children;
     symbol: string;
     styleContainer: CSSProperties;
     styleSymbol: CSSProperties;
-    presentValue: (value: number) => any;
+    presentValue: (value: number | string) => any;
   }>;
 
 const DonutValue = ({

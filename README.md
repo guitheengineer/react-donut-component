@@ -1,8 +1,8 @@
-<h1 align="center">
+
   <img src="https://i.ibb.co/j6df7Wy/logo.png" alt="donut logo" title="donut logo" width="171">
   <br>
-</h1>
-<p align="center" style="font-size: 1.2rem;">A simple, styleable and easy to use donut component.</p>
+
+<p style="font-size: 1.2rem;">A simple, styleable and easy to use donut component.</p>
 <hr />
 
 ![downloads][downloads-badge]

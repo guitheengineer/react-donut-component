@@ -12,7 +12,7 @@ export default {
     color: { control: 'color' },
     trackColor: { control: 'color' },
     trackStyle: { options: ['butt', 'round', 'square'] },
-    children: { control: 'range' },
+    children: { control: 'range', name: 'value' },
   },
   subcomponents: { DonutValue, DonutLabel },
 } as Meta;

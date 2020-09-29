@@ -8,6 +8,8 @@ export type DonutProps = Partial<{
   animate: boolean;
   style: CSSProperties;
   trackColor: string;
-  trackStyle: CSSProperties;
+  styleTrack: CSSProperties;
   linecap: 'butt' | 'round' | 'square';
+  trackStrokeWidth: number;
+  indicatorStrokeWidth: number;
 }>;

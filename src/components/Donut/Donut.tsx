@@ -11,9 +11,11 @@ const Donut = ({
   color = 'black',
   style,
   trackColor = '#dfdff1',
-  trackStyle,
+  trackStrokeWidth = 15,
+  styleTrack,
   animate = false,
   linecap = 'butt',
+  indicatorStrokeWidth = 15,
 }: DonutProps) => {
   const [value, setValue] = useState(0);
   const halfSize = size * 0.5;
@@ -41,7 +43,22 @@ const Donut = ({
           cx={halfSize}
           cy={halfSize}
           transform={rotateVal}
-          style={trackStyle ? trackStyle : { strokeWidth, stroke: trackColor }}
+          style={
+            styleTrack
+              ? {
+                  strokeWidth: trackStrokeWidth
+                    ? trackStrokeWidth
+                    : strokeWidth,
+                  stroke: trackColor,
+                  ...styleTrack,
+                }
+              : {
+                  strokeWidth: trackStrokeWidth
+                    ? trackStrokeWidth
+                    : strokeWidth,
+                  stroke: trackColor,
+                }
+          }
           className='Donut__track'
         />
         <circle
@@ -50,7 +67,9 @@ const Donut = ({
           cy={halfSize}
           transform={rotateVal}
           style={{
-            strokeWidth,
+            strokeWidth: indicatorStrokeWidth
+              ? indicatorStrokeWidth
+              : strokeWidth,
             strokeDasharray,
             stroke: color,
             transition: animate ? 'all 2s ease' : 'initial',

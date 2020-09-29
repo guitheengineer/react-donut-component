@@ -1,9 +1,13 @@
-<img src="https://i.ibb.co/KFd4kSp/logo.png" alt="donut logo" title="donut logo" width="181" height='77'>
-<p style="margin-top: -20px;">A simple, styleable and easy to use component.</p>
+<h1 align="center">
+  <img src="https://i.ibb.co/j6df7Wy/logo.png" alt="donut logo" title="donut logo" width="171">
+  <br>
+</h1>
+<p align="center" style="font-size: 1.2rem;">A simple, styleable and easy to use donut component.</p>
 <hr />
 
 ![downloads][downloads-badge]
 [![MIT License][license-badge]][license]
+![npm](https://img.shields.io/npm/v/react-donut-component)
 
 ## Install
 
@@ -25,9 +29,9 @@ const App = () => (
 
 ```
 ## Result: 
-![donut-example](https://i.ibb.co/kmSRWSY/donut-example.png)
+![donut-example](https://i.ibb.co/n60Dgxx/image.png)
 
-For examples with styling, labels and multiple values, see: 
+The API and examples with styles, labels and multiple values are available in: 
 [the story book](https://5f711adb6ec1620022e842dc-ewgfhkdqda.chromatic.com/?path=/story/donut--simple-donut)
 
 That's all :wink:

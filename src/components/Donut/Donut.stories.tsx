@@ -32,11 +32,16 @@ export const DonutWithLabel: Story<DonutProps> = (args) => (
 );
 
 export const StyledDonut: Story<DonutProps> = (args) => (
-  <Donut trackStrokeWidth={9} trackColor='#d3f7ee' indicatorColor='#23d5aa'>
+  <Donut
+    styleTrack={{ strokeWidth: 9, stroke: 'AliceBlue' }}
+    styleIndicator={{ stroke: 'Cyan', strokeLinecap: 'round' }}
+    {...args}
+  >
     <DonutValue
-      symbolPosition='top-right'
-      styleSymbol={{ fontWeight: 'bold', fontSize: '18px' }}
       style={{ fontWeight: 'bold' }}
+      symbol='°C'
+      styleSymbol={{ fontWeight: 'bold', fontSize: '18px' }}
+      symbolPosition='top-right'
     >
       79
     </DonutValue>

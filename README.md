@@ -1,6 +1,5 @@
-
-  <img src="https://i.ibb.co/j6df7Wy/logo.png" alt="donut logo" title="donut logo" width="171">
-  <br>
+<img src="https://i.ibb.co/j6df7Wy/logo.png" alt="donut logo" title="donut logo" width="171">
+<br>
 
 <p style="font-size: 1.2rem;">A simple, styleable and easy to use donut component.</p>
 <hr />
@@ -24,15 +23,84 @@ import React from 'react'
 import { Donut } from 'react-donut-component' 
 
 const App = () => (  
-   <Donut>70</Donut>
+  <Donut>70</Donut>
 );
 
 ```
-## Result: 
-![donut-example](https://i.ibb.co/n60Dgxx/image.png)
+#### Preview: 
+![donut-example](https://i.ibb.co/P6RnW0x/image.png)
 
-See the API and examples with styles, labels and multiple values in: 
-[the story book](https://5f711adb6ec1620022e842dc-ewgfhkdqda.chromatic.com/?path=/story/donut--simple-donut)
+<hr />
+
+### Setting a label:
+> When you put a label, you have to specify the value with DonutValue component
+```jsx
+import React from 'react'
+import { Donut, DonutValue, DonutLabel } from 'react-donut-component' 
+
+const App = () => (
+  <Donut>
+    <DonutValue>70</DonutValue>
+    <DonutLabel>My label</DonutLabel>
+  </Donut>
+);
+
+```
+#### Preview: 
+![donut-example](https://i.ibb.co/wwbBkQw/image.png)
+
+<hr />
+
+### Styling: 
+> There are many style props with the format 'styleSomething'.
+
+[See API](https://5f711adb6ec1620022e842dc-ewgfhkdqda.chromatic.com/?path=/docs/donut--simple-donut)
+```jsx
+import React from 'react'
+import { Donut, DonutValue, DonutLabel } from 'react-donut-component' 
+
+const App = () => (
+  <Donut
+    styleTrack={{ strokeWidth: 9, stroke: 'AliceBlue' }}
+    styleIndicator={{ stroke: 'Cyan', strokeLinecap: 'round' }}
+  >
+    <DonutValue
+      style={{ fontWeight: 'bold' }}
+      symbol='°C'
+      styleSymbol={{ fontWeight: 'bold', fontSize: '18px' }}
+      symbolPosition='top-right'
+    >
+      79
+    </DonutValue>
+  </Donut>
+);
+```
+#### Preview: 
+![donut-example](https://i.ibb.co/3d1HN7D/image.png)
+
+<hr />
+
+## Usage with multiple values
+We provide a component called DonutMultiple, which can receive multiple DonutElement values that are calculated relatively. 
+
+```jsx
+import React from 'react'
+import { DonutMultiple, DonutElement, DonutLabel } from 'react-donut-component' 
+
+const App = () => (
+  <DonutMultiple>
+    <DonutElement color='brown' name="Messi">6</DonutElement>
+    <DonutElement color='black' name="CR7">5</DonutElement>
+    <DonutLabel>Ballon d'ors</DonutLabel>
+  </DonutMultiple>
+);
+```
+#### Preview: 
+![donut-example](https://i.ibb.co/gVHhH50/image.png)
+
+#### See the API and more examples like this in the: [the story book](https://5f711adb6ec1620022e842dc-ewgfhkdqda.chromatic.com/?path=/story/donut--simple-donut)
+<img src="https://i.ibb.co/18kDxtj/donut-test.png" alt="donut logo" title="donut logo" width="300">
+
 
 That's all :wink:
 

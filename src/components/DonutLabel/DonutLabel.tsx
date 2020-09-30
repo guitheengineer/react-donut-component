@@ -1,8 +1,8 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, ReactNode } from 'react';
 import './donut-label.scss';
 
 type Props = {
-  children?: string | number;
+  children?: ReactNode;
   className?: string;
   style?: CSSProperties;
   multiple?: boolean;

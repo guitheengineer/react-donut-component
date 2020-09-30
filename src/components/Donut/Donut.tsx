@@ -11,12 +11,12 @@ const Donut = ({
   color = 'black',
   style,
   trackColor = '#dfdff1',
-  trackStrokeWidth = 15,
+  trackStrokeWidth,
   styleTrack,
   styleIndicator,
   animate = false,
   linecap = 'butt',
-  indicatorStrokeWidth = 15,
+  indicatorStrokeWidth,
   indicatorColor = 'black',
 }: DonutProps) => {
   const [value, setValue] = useState(0);

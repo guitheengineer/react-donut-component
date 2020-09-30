@@ -11,6 +11,7 @@ type Props = Pick<DonutProps, 'style' | 'className'> &
     styleContainer: CSSProperties;
     styleSymbol: CSSProperties;
     presentValue: (value: number | string) => any;
+    symbolPosition: 'bottom-right' | 'bottom-left' | 'top-left' | 'top-right';
   }>;
 
 const DonutValue = ({
@@ -20,6 +21,7 @@ const DonutValue = ({
   styleContainer,
   presentValue,
   symbol,
+  symbolPosition = 'bottom-right',
   className,
 }: Props) => {
   useEffect(() => {
@@ -28,7 +30,24 @@ const DonutValue = ({
     }
   }, [presentValue, children]);
   return (
-    <div style={styleContainer} className='Donut__value-container'>
+    <div
+      style={{
+        alignItems:
+          symbolPosition === 'top-right' || symbolPosition === 'top-left'
+            ? ''
+            : 'baseline',
+        flexDirection:
+          symbolPosition === 'bottom-left' || symbolPosition === 'top-left'
+            ? 'row-reverse'
+            : 'initial',
+        left:
+          symbolPosition === 'bottom-left' || symbolPosition === 'top-left'
+            ? '0'
+            : '6px',
+        ...styleContainer,
+      }}
+      className='Donut__value-container'
+    >
       <span style={style} className={`Donut__value ${className}`}>
         {children}
       </span>

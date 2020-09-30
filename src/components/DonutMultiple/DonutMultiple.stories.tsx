@@ -60,7 +60,13 @@ export const StyledMultipleLabel: Story<DonutProps> = (args) => (
       10
     </DonutElement>
     <DonutLabel style={{ fontSize: '20px' }}>
-      <div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
         20<p>Testing</p>
       </div>
     </DonutLabel>

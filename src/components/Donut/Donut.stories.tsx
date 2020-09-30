@@ -8,11 +8,16 @@ export default {
   title: 'Donut',
   component: Donut,
   argTypes: {
+    size: { control: 'number' },
+    children: { control: 'range', name: 'value' },
     strokeWidth: { control: 'range' },
     color: { control: 'color' },
     trackColor: { control: 'color' },
+    indicatorColor: { control: 'color' },
     trackStyle: { options: ['butt', 'round', 'square'] },
-    children: { control: 'range', name: 'value' },
+    trackStrokeWidth: { control: 'range' },
+    indicatorStrokeWidth: { control: 'range' },
+    linecap: { control: 'inline-radio' },
   },
   subcomponents: { DonutValue, DonutLabel },
 } as Meta;
@@ -23,5 +28,21 @@ export const DonutWithLabel: Story<DonutProps> = (args) => (
   <Donut {...args}>
     <DonutValue>85</DonutValue>
     <DonutLabel>Result</DonutLabel>
+  </Donut>
+);
+
+export const StyledDonut: Story<DonutProps> = (args) => (
+  <Donut
+    styleTrack={{ strokeWidth: 9, stroke: '#d3f7ee' }}
+    styleIndicator={{ stroke: '#23d5aa' }}
+    {...args}
+  >
+    <DonutValue
+      symbolPosition='top-right'
+      styleSymbol={{ fontWeight: 'bold', fontSize: '18px' }}
+      style={{ fontWeight: 'bold' }}
+    >
+      79
+    </DonutValue>
   </Donut>
 );

@@ -7,7 +7,9 @@ export default {
   title: 'Donut Multiple',
   component: DonutMultiple,
   argTypes: {
+    size: { control: 'number' },
     strokeWidth: { control: 'range' },
+    linecap: { control: 'inline-radio' },
   },
 };
 
@@ -37,5 +39,47 @@ export const MultipleLabelWithNames: Story<DonutProps> = (args) => (
       20
     </DonutElement>
     <DonutLabel>Label</DonutLabel>
+  </DonutMultiple>
+);
+
+export const StyledMultipleLabel: Story<DonutProps> = (args) => (
+  <DonutMultiple {...args}>
+    <DonutElement name='Another one' color='#56ADA7'>
+      30
+    </DonutElement>
+    <DonutElement name='Another one' color='#DC442D'>
+      20
+    </DonutElement>
+    <DonutElement name='Another one' color='#EA9564'>
+      20
+    </DonutElement>
+    <DonutElement name='Another one' color='#4C7D85'>
+      20
+    </DonutElement>
+    <DonutElement name='Another one' color='#30434D'>
+      10
+    </DonutElement>
+    <DonutLabel style={{ fontSize: '20px' }}>
+      <div>
+        20<p>Testing</p>
+      </div>
+    </DonutLabel>
+  </DonutMultiple>
+);
+
+export const StyledMultipleLabel2: Story<DonutProps> = (args) => (
+  <DonutMultiple {...args}>
+    <DonutElement name='Another one' color='#9dd7e7'>
+      60
+    </DonutElement>
+    <DonutElement name='Another one' color='#cceff1'>
+      20
+    </DonutElement>
+    <DonutElement name='Another one' color='#005938'>
+      10
+    </DonutElement>
+    <DonutElement name='Another one' color='#00b97f'>
+      5
+    </DonutElement>
   </DonutMultiple>
 );

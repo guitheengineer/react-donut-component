@@ -14,4 +14,5 @@ export type DonutProps = Partial<{
   trackStrokeWidth: number;
   indicatorStrokeWidth: number;
   indicatorColor: string;
+  showValue: boolean;
 }>;

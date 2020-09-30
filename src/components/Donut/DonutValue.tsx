@@ -12,6 +12,7 @@ type Props = Pick<DonutProps, 'style' | 'className'> &
     styleSymbol: CSSProperties;
     presentValue: (value: number | string) => any;
     symbolPosition: 'bottom-right' | 'bottom-left' | 'top-left' | 'top-right';
+    showValue: boolean;
   }>;
 
 const DonutValue = ({
@@ -23,13 +24,14 @@ const DonutValue = ({
   symbol,
   symbolPosition = 'bottom-right',
   className,
+  showValue = true,
 }: Props) => {
   useEffect(() => {
     if (presentValue) {
       presentValue(children);
     }
   }, [presentValue, children]);
-  return (
+  return showValue ? (
     <div
       style={{
         alignItems:
@@ -55,7 +57,7 @@ const DonutValue = ({
         {symbol || '%'}
       </span>
     </div>
-  );
+  ) : null;
 };
 
 export default DonutValue;

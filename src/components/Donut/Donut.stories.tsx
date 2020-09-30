@@ -47,3 +47,28 @@ export const StyledDonut: Story<DonutProps> = (args) => (
     </DonutValue>
   </Donut>
 );
+
+export const StyledDonut2: Story<DonutProps> = (args) => (
+  <Donut
+    color='rgba(0,50,255,1)'
+    indicatorColor='rgba(0,50,255,1)'
+    linecap='round'
+    size={129}
+    strokeWidth={15}
+    trackColor='rgba(238,238,238,1)'
+  >
+    <DonutValue style={{ fontSize: '26px' }}>30</DonutValue>
+  </Donut>
+);
+
+export const StyledDonut3: Story<DonutProps> = (args) => (
+  <Donut
+    indicatorColor='#F6A09E'
+    size={129}
+    strokeWidth={15}
+    trackColor='#FBBE95'
+    trackStrokeWidth={7}
+  >
+    <DonutValue showValue={false}>50</DonutValue>
+  </Donut>
+);

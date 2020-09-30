@@ -89,3 +89,11 @@ export const StyledMultipleLabel2: Story<DonutProps> = (args) => (
     </DonutElement>
   </DonutMultiple>
 );
+
+export const StyledMultipleLabel3: Story<DonutProps> = (args) => (
+  <DonutMultiple size={170} strokeWidth={12}>
+    <DonutElement color='blue'>50</DonutElement>
+    <DonutElement color='cyan'>25</DonutElement>
+    <DonutElement color='pink'>25</DonutElement>
+  </DonutMultiple>
+);

@@ -1,8 +1,15 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .Donut {
   &__label {
     font-size: 12px;
     position: relative;
-    margin: 0;
     font-family: sans-serif;
   }
   &__text-container {

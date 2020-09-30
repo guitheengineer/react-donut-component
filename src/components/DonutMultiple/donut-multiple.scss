@@ -1,6 +1,15 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .Donut-multiple {
   position: relative;
   margin: 0;
+  font-family: sans-serif;
   &__label {
     margin: 0;
     font-size: 14px;

@@ -5,14 +5,19 @@ import DonutSubtitle from './DonutSubtitle';
 const donutElement = 'DonutElement';
 const donutLabel = 'DonutLabel';
 
+type Props = Pick<
+  DonutProps,
+  'children' | 'className' | 'animate' | 'linecap' | 'strokeWidth' | 'size'
+>;
+
 const DonutMultiple = ({
-  children,
   size = 275,
   strokeWidth = 7,
   animate = false,
   linecap = 'butt',
+  children,
   className,
-}: DonutProps) => {
+}: Props) => {
   const cx = 50;
   const cy = 50;
   const dashArray = 2 * Math.PI * 30;

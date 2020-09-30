@@ -98,6 +98,8 @@ const App = () => (
 #### Preview: 
 ![donut-example](https://i.ibb.co/gVHhH50/image.png)
 
+<hr />
+
 #### See the API and more examples like this in the: [the story book](https://5f711adb6ec1620022e842dc-ewgfhkdqda.chromatic.com/?path=/story/donut--simple-donut)
 <img src="https://i.ibb.co/18kDxtj/donut-test.png" alt="donut logo" title="donut logo" width="300">
 

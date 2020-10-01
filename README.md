@@ -54,7 +54,7 @@ const App = () => (
 ### Styling: 
 > There are many style props with the format 'styleSomething'.
 
-[See API](https://5f711adb6ec1620022e842dc-ewgfhkdqda.chromatic.com/?path=/docs/donut--simple-donut)
+[See API](https://5f711adb6ec1620022e842dc-wucwtrunim.chromatic.com/?path=/story/donut--simple-donut)
 ```jsx
 import React from 'react'
 import { Donut, DonutValue, DonutLabel } from 'react-donut-component' 
@@ -100,7 +100,7 @@ const App = () => (
 
 <hr />
 
-#### See the API and more examples like this in the: [the story book](https://5f711adb6ec1620022e842dc-ewgfhkdqda.chromatic.com/?path=/story/donut--simple-donut)
+#### See the API and more examples like this in the: [the story book](https://5f711adb6ec1620022e842dc-wucwtrunim.chromatic.com/?path=/story/donut--simple-donut)
 <img src="https://i.ibb.co/18kDxtj/donut-test.png" alt="donut logo" title="donut logo" width="300">
 
 

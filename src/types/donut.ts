@@ -7,7 +7,9 @@ export type DonutProps = Partial<{
   children: any;
   animate: boolean;
   style: CSSProperties;
+  classNameContainer: string;
   trackColor: string;
+  styleContainer: CSSProperties;
   styleTrack: CSSProperties;
   styleIndicator: CSSProperties;
   linecap: 'butt' | 'round' | 'square';

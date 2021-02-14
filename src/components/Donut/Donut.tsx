@@ -1,15 +1,17 @@
-import React, { useState, cloneElement, Children } from 'react';
+import React, { useState, cloneElement, Children, useCallback } from 'react';
 import './donut.scss';
 import DonutValue from './DonutValue';
-import { DonutProps } from '../../types';
+import { DonutProps } from 'types';
 
 const Donut = ({
   size = 180,
   strokeWidth = 15,
   className,
   children,
+  classNameContainer,
   color = 'black',
   style,
+  styleContainer,
   trackColor = '#dfdff1',
   trackStrokeWidth,
   styleTrack,
@@ -28,12 +30,19 @@ const Donut = ({
 
   const rotateVal = `rotate(-90 ${halfSize},${halfSize})`;
 
-  const presentValue = (value: number) => {
-    setValue(value);
-  };
+  const presentValue = useCallback(
+    (value: number) => {
+      setValue(value);
+    },
+    [value]
+  );
 
   return (
-    <div style={{ width: size, color }} data-testid='donut' className='Donut'>
+    <div
+      style={{ ...styleContainer, width: size, color }}
+      data-testid="donut"
+      className={`Donut ${classNameContainer}`}
+    >
       <svg
         style={style}
         width={size}
@@ -61,7 +70,7 @@ const Donut = ({
                   stroke: trackColor,
                 }
           }
-          className='Donut__track'
+          className="Donut__track"
         />
         <circle
           r={radius}
@@ -88,11 +97,11 @@ const Donut = ({
                   transition: animate ? 'all 2s ease' : 'initial',
                 }
           }
-          className='Donut__indicator'
+          className="Donut__indicator"
           strokeLinecap={linecap}
         />
       </svg>
-      <div className='Donut__text-container'>
+      <div className="Donut__text-container">
         {typeof children === 'number' ||
         typeof children === 'string' ||
         typeof children === 'undefined' ? (

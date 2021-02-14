@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { DonutMultiple, DonutElement } from './index';
+import { DonutMultiple, DonutElement } from '../../';
 import DonutLabel from '../DonutLabel/DonutLabel';
 
 test('Test if donut multiple renders correctly', () => {

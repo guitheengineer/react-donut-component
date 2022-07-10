@@ -108,7 +108,7 @@ That's all :wink:
 
 ## Contributors
 
-@gsdeveloper
+@guilhermefront
    
 ## LICENSE
 

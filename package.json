@@ -18,19 +18,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gsdeveloper/react-donut-component.git"
+    "url": "git+https://github.com/guilhermefront/react-donut-component.git"
   },
   "keywords": [
     "react-donut-component",
     "react-donut",
     "donut-chart-component"
   ],
-  "author": "gsdeveloper <gsdevelopercontact@gmail.com>",
+  "author": "guilhermefront <devguilhermefront@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gsdeveloper/react-donut-component/issues"
+    "url": "https://github.com/guilhermefront/react-donut-component/issues"
   },
-  "homepage": "https://github.com/gsdeveloper/react-donut-component#readme",
+  "homepage": "https://github.com/guilhermefront/react-donut-component#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@rollup/plugin-commonjs": "^15.1.0",
